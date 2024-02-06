@@ -1,7 +1,19 @@
-Um teste qualquer neste arquivo!!!!!!!
+um teste qualquer nesse arquivo.
 
-fazendo mudançãs
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+ssh-keygen -t rsa -f "/c/users/nilan/.ssh/github" -c 'nilanderandrade@hotmail.com'
 
-ultima mudança no arquivo!!!
-sssss
+#quando fechar o terminal preciso executar isso!
+eval "$(ssh-agent -s)"
+ssh-add /c/users/nilan/.sshid/_ed25519
+
+#Iniciando o git 
+git init
+git config --global user.name "nicklander"
+git config --global user.email "me email!"
+git remote add origin git@githunb.com:nilanderandrade@hotmail.com/temp-repo.git
+
+#Editei
+
+git add .
+git commit -m 'initial'
+git push origin mmaster -u
